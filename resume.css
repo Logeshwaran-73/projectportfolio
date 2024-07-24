@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #030303;
+  --primary-color-dark: #0c0c0c;
+  --secondary-color: #ca8a04;
+  --text-light: #fafafb;
+  --text-dark: rgb(245, 247, 249);
+  --extra-light: #f4f4f4;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(32, 33, 32);
+  color: var(--text-light);
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(165, 201, 235);
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.about {
+  background-color: var(--extra-light);
+  padding: 5rem 1rem;
+  margin-top: 85px;
+}
+
+.about__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem;
+  background: rgb(32, 33, 32);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about__container h1,
+.about__container h2 {
+  color: rgb(165, 201, 235);
+}
+
+.about__container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about__container h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about__container p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about__container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about__container li {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.skills {
+  margin-bottom: 2rem;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill__name {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.skill__bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill__bar--fill {
+  background-color: rgb(133, 188, 240);
+  text-align: right;
+  padding: 5px;
+  color: black;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+.resume__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.resume__button:hover {
+  background-color:rgb(151, 176, 204);
+}
+
+@media (max-width: 750px) {
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .about__container {
+    padding: 5rem 1rem 2rem 1rem;
+    text-align: center;
+  }
+
+  .about__container h1 {
+    font-size: 2rem;
+  }
+
+  .about__container h2 {
+    font-size: 1.25rem;
+  }
+}
