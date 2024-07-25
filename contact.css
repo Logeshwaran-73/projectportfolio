@@ -58,18 +58,19 @@ nav .logo a:hover {
 nav .checkbox {
   display: none;
 }
-.hello{
-  color: #ffffff;
-}
 nav input {
   display: none;
 }
 nav .checkbox i {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: white;
   cursor: pointer;
 }
-
+.hello{
+    color: #ffffff;
+    background-color: rgb(58, 90, 120);
+    border-radius: 5px;
+  }
 ul {
   display: flex;
   align-items: center;

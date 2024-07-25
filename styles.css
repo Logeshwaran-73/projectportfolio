@@ -61,13 +61,15 @@ nav .checkbox {
 }
 .hello{
   color: #ffffff;
+  background-color: rgb(58, 90, 120);
+  border-radius: 5px;
 }
 nav input {
   display: none;
 }
 nav .checkbox i {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: white;
   cursor: pointer;
 }
 
@@ -166,11 +168,11 @@ ul li a:hover {
 }
 
 .portfolio {
-  color: var(--primary-color);
+  color: rgb(165, 201, 235);
 }
 
 .portfolio:hover {
-  background-color: var(--primary-color-dark);
+  background-color:rgb(10, 10, 10);;
   color: #ffffff;
 }
 

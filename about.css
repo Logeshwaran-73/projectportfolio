@@ -64,9 +64,14 @@ nav input {
 }
 nav .checkbox i {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: white;
   cursor: pointer;
 }
+.hello{
+    color: #ffffff;
+    background-color: rgb(58, 90, 120);
+    border-radius: 5px;
+  }
 
 ul {
   display: flex;

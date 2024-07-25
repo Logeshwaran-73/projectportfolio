@@ -54,7 +54,22 @@ nav .logo a {
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
-
+nav .checkbox {
+    display: none;
+  }
+  nav input {
+    display: none;
+  }
+  nav .checkbox i {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  .hello{
+      color: #ffffff;
+      background-color: rgb(58, 90, 120);
+      border-radius: 5px;
+    }
 ul {
   display: flex;
   align-items: center;
